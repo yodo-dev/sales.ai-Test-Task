@@ -4,7 +4,12 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+pnpm-debug.log*
 lerna-debug.log*
+
+# Local system and credential files
+.DS_Store
+*.pem
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
@@ -37,6 +42,9 @@ bower_components
 # Compiled binary addons (https://nodejs.org/api/addons.html)
 build/Release
 
+# Production build output
+build
+
 # Dependency directories
 node_modules/
 jspm_packages/
@@ -46,6 +54,7 @@ web_modules/
 
 # TypeScript cache
 *.tsbuildinfo
+next-env.d.ts
 
 # Optional npm cache directory
 .npm
@@ -77,6 +86,9 @@ web_modules/
 # Next.js build output
 .next
 out
+
+# Vercel
+.vercel
 
 # Nuxt.js build / generate output
 .nuxt
